@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 align="center">Name :{{name}} </h3>
+<h3 align="center">Age :{{age}} </h3>
+<h3 align="center">Email :{{email}} </h3>
+{% if avg >= 85 and avg <= 100 %}
+<h2 align="center">Distinction</h2>
+{% elif avg >= 50 and avg < 85 %}
+<h2 align="center">Firstclass</h2>
+{% elif avg >= 25 and avg < 50 %}
+<h2 align="center">Second class</h2>
+{% else %}
+<h2 align="center">Fail</h2>
+{% endif %}
+</body>
+</html>

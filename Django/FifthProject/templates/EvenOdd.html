@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Even or Odd number</h1>
+<form action="readdata" method="post">
+    {% csrf_token %}
+
+
+<table align="center">
+    <tr>
+        <td>Num:</td>
+        <td><input type ="number" name="txtNum"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="submit" name="btnsub"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

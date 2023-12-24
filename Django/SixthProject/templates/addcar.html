@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Add Car Data</h1>
+<h2 align="center" style="color:green">{{msg}}</h2>
+<form action="addcar" method ="post">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+        <td>CarName:</td>
+        <td><input type ="text" name="txtCarName"></td>
+    </tr>
+    <tr>
+        <td>CarCompany :</td>
+        <td><input type ="text" name="txtCarCompany"></td>
+    </tr>
+    <tr>
+        <td>CarModel :</td>
+        <td><input type ="text" name="txtCarModel"></td>
+    </tr>
+    <tr>
+        <td>CarPrice :</td>
+        <td><input type ="number" name="txtCarPrice"></td>
+    </tr>
+    <tr>
+        <td>Fuel Type :</td>
+        <td>
+            <select name="ddlFuelType">
+                <option>--select fuel type--</option>
+                <option>Petrol</option>
+                <option>Diesel</option>
+            </select>
+        </td>
+    </tr>
+     <tr>
+        <td><input type="submit" value="AddCar" name="btnsub"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

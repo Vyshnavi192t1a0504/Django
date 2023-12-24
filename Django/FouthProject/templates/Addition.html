@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Addition of 2 Numbers</h1>
+<form action="readdata"method ="post">
+    {% csrf_token %}
+
+<table align="center">
+    <tr>
+        <td>Num1:</td>
+        <td><input type ="number" name="txtNum1" value="{{num1}}"></td>
+    </tr>
+        <tr>
+        <td>Num2:</td>
+        <td><input type ="number" name="txtNum2" value="{{num2}}"></td>
+
+    <tr>
+        <td><input type="submit" value="Add" name="btnsub"></td>
+    </tr>
+
+    <tr>
+        <td>Result:</td>
+        <td><input type ="text" name="txtRes" value="{{Sum}}"></td>
+    </tr>
+        <!DTL--data template language>
+
+        <!{{keyname}}>
+
+</table>
+</form>
+</body>
+</html>

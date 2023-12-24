@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if data|divisibleby:2 %}
+    <h1 align="center">{{data}} is even number</h1>
+{% else %}
+    <h1 align="center">{{data}} is odd number</h1>
+
+{% endif %}
+
+</body>
+</html>

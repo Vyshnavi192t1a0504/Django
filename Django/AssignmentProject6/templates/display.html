@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center" border="1"  >
+    <tr>
+        <th>Id</th>
+        <th>MobileName</th>
+        <th>No_Of_Cameras</th>
+        <th>Ram</th>
+        <th>MobileCost</th>
+        <th>ModelColor</th>
+        <th>Update Data</th>
+        <th>Delete Data</th>
+    </tr>
+    {% for i in Mobile %}
+        <tr>
+           <td>{{i.id}}</td>
+            <td>{{i.mobile_name}}</td>
+            <td>{{i.no_of_cameras}}</td>
+            <td>{{i.mobile_ram }}</td>
+            <td>{{i.mobile_price }}</td>
+            <td>{{i.mobile_color}}</td>
+            <td><a href="{% url 'update' i.id %}">update</a></td>
+            <td><a href="{% url 'del' i.id %}">Delete</a></td>
+        </tr>
+
+
+    {% endfor %}
+</table>
+
+</body>
+</html>

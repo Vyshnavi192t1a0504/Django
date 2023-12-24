@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>even number</title>
+</head>
+<body>
+{% for i in data %}
+    {% if i|divisibleby:2 %}
+         <h1 align="center">{{i}} is even number</h1>
+    {% endif %}
+{% endfor %}
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method ="post">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+        <td>MobileName:</td>
+        <td><input type ="text" name="txtMobileName" value="{{ data.mobile_name}}"></td>
+    </tr>
+    <tr>
+        <td>No_Of-Cameras:</td>
+        <td><input type ="number" name="txtNo_of_Cameras" value="{{ data.no_of_cameras}}"></td>
+    </tr>
+    <tr>
+        <td>MobileRam :</td>
+        <td><input type ="text" name="txtMobileRam" value="{{ data.mobile_ram}}"></td>
+    </tr>
+    <tr>
+        <td>MobilePrice :</td>
+        <td><input type ="number" name="txtMobilePrice" value="{{ data.mobile_price}}"></td>
+    </tr>
+    <tr>
+        <td>MobileColor :</td>
+        <td><input type ="text" name="txtMobile" value="{{ data.mobile_ram}}"></td>
+    </tr>
+     <tr>
+        <td><input type="submit" value="AddMobile" name="btnsub"></td>
+    </tr>
+</table>
+</form>
+
+
+</body>
+</html>

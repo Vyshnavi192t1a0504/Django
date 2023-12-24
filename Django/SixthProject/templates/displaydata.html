@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center" border="1"  >
+    <tr>
+        <th>Id</th>
+        <th>CarName</th>
+        <th>CarCompany</th>
+        <th>CarModel</th>
+        <th>CarCost</th>
+        <th>FuelType</th>
+        <th>Update Data</th>
+        <th>Delete Data</th>
+    </tr>
+    {% for i in Car %}
+        <tr>
+           <td>{{i.id}}</td>
+            <td>{{i.car_name}}</td>
+            <td>{{i.car_company}}</td>
+            <td>{{i.car_model}}</td>
+            <td>{{i.car_price}}</td>
+            <td>{{i.fuel_type}}</td>
+            <td><a href="{% url 'update' i.id %}">update</a></td>
+            <td><a href="{% url 'del' i.id %}">Delete</a></td>
+        </tr>
+
+
+    {% endfor %}
+</table>
+</body>
+</html>

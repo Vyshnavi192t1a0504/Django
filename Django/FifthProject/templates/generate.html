@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">generate the numbers</h1>
+<form action="read_data" method ="post">
+    {% csrf_token %}
+    <h3 align="center" style="color:red">{{msg}} </h3>
+
+<table align="center">
+    <tr>
+        <td>Num1:</td>
+        <td><input type ="number" name="txtNum1"></td>
+    </tr>
+        <tr>
+        <td>Num2:</td>
+        <td><input type ="number" name="txtNum2"></td>
+    <tr>
+   <tr>
+        <td><input type="submit" value="generate" name="btnsub"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
